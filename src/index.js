@@ -1,5 +1,9 @@
 const express = require("express");
 require('dotenv').config();
+const { mongoose } = require("./config/mongoDbConnection");
+const { fetchRestaurants } = require("./controllers/restaurantController");
+
+
 const cors = require("cors");
 
 const PORT = process.env.PORT || 3001
@@ -13,8 +17,4 @@ app.listen(PORT, () => {
     console.log(`Server is listening on ${PORT}`);
 });
 
-
-app.get("/api", (req,res) => {
-    console.log("Get request received");
-    res.json({ message: "Hello from server!" });
-});
+app.get("/api", fetchRestaurants);
