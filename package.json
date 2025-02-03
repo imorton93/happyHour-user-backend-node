@@ -1,0 +1,27 @@
+{
+  "name": "happyhour-client-backend",
+  "version": "1.0.0",
+  "description": "The backend of the client side of the Happy Hour app to set up REST Api calls",
+  "homepage": "https://bitbucket.org/imorton93/happyhour-client-backend#readme",
+  "bugs": {
+    "url": "https://bitbucket.org/imorton93/happyhour-client-backend/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://imorton@bitbucket.org/imorton93/happyhour-client-backend.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.9.6"
+  }
+}
