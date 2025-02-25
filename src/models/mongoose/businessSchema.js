@@ -24,6 +24,14 @@ const businessSchema = new mongoose.Schema({
         type: String,   
         require: true
     },
+    latitude: {
+        type: Number,
+        require: true
+    },
+    longitude: {
+        type: Number,
+        require: true
+    },
     deals: dealsSchema,
 });
 
