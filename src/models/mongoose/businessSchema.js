@@ -3,7 +3,7 @@ const { dealsSchema } = require('./deals.js');
 
 //business Schema
 const businessSchema = new mongoose.Schema({
-    yelpid: {
+    place_id: {
         type: String,    
         require: true
     },   
